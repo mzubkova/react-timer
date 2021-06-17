@@ -1,3 +1,31 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+.light {
+  background-color: #dfe3eb;
+  color: #525bc4;
+}
+
+.dark {
+  background-color: #282c34;
+  color: white;
+}
+
+.theme-toggle-btn {
+  padding: 1%;
+  border: 0;
+  cursor: pointer;
+  bottom: 5%;
+  font-size: 0.5em;
+  position: absolute;
+}
+
+.icon-light {
+  color: #dfe3eb;
+  background-color: #525bc4;
+}
+
+.icon-dark {
+  background-color: #dc1568;
+  color: white;
+}
