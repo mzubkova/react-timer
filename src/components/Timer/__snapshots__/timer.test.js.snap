@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Timer Should match shapshot 1`] = `"<div class=\\"timer\\"><div class=\\"timer-inner\\"><label><input class=\\"timer-input\\" value=\\"\\" placeholder=\\"write your value\\"/></label><button class=\\"timer-button\\" value=\\"\\">Set</button><button class=\\"timer-button\\">Start</button><button class=\\"timer-button\\"> Reset</button><h1 class=\\"title\\">Time: 00:00:00</h1><div class=\\"timer-progress\\" style=\\"width:NaN%\\"></div></div></div>"`;

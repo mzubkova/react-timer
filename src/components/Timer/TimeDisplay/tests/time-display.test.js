@@ -11,4 +11,12 @@ describe("TimeDisplay", () => {
     const component = mount(<TimeDisplay />);
     expect(component.find("TimeDisplay")).toHaveLength(1);
   });
+  it("Should have h1", () => {
+    const component = mount(<TimeDisplay />);
+    expect(component.find("h1")).toHaveLength(1);
+  });
+  it("Should have div", () => {
+    const component = mount(<TimeDisplay />);
+    expect(component.find("div")).toHaveLength(1);
+  });
 });

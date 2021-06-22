@@ -1,3 +1,3 @@
-import Button from "./Button";
+import ButtonTheme from "./ButtonTheme";
 
-export default Button;
+export default ButtonTheme;

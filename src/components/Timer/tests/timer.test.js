@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow, mount } from "enzyme";
-import Timer from "../Timer";
-import TimeDisplay from "./Timer";
+import Timer from "..";
+import TimeDisplay from "../Timer";
 
 describe("Timer", () => {
   it("Should match shapshot", () => {

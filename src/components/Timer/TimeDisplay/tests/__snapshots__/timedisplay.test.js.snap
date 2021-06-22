@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TimeDisplay Should match shapshot 1`] = `"<h1 class=\\"title title--light\\">Time: NaN:NaN:NaN</h1><div class=\\"timer-progress\\" style=\\"width:NaN%\\"></div>"`;

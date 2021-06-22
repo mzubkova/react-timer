@@ -8,7 +8,11 @@ describe("App", () => {
     const component = shallow(<App />);
     expect(component.html()).toMatchSnapshot();
   });
-  it("Should have ToDo", () => {
+  it("Should have Header", () => {
+    const component = mount(<App />);
+    expect(component.find("Header")).toHaveLength(1);
+  });
+  it("Should have Timer", () => {
     const component = mount(<App />);
     expect(component.find("Timer")).toHaveLength(1);
   });

@@ -1,9 +1,14 @@
-import React, { useState, useEffect } from "react";
-// import { ThemeContext } from "../../Context/ThemeContext";
+import React, { useState, useEffect, useContext } from "react";
+import PropTypes from "prop-types";
+
+import { ThemeContext } from "../../Context/ThemeContext";
+
 import "../Timer.scss";
 
 const TimeDisplay = ({ initialTime, step = 1000, isActive }) => {
   const [time, setTime] = useState(initialTime);
+
+  const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     setTime(initialTime);
@@ -37,13 +42,23 @@ const TimeDisplay = ({ initialTime, step = 1000, isActive }) => {
 
   return (
     <>
-      <h1 className="title">Time: {getTimeInMin(time)}</h1>
+      <h1 className={`title title--${theme}`}>Time: {getTimeInMin(time)}</h1>
       <div
         className="timer-progress"
         style={{ width: `${(time / initialTime) * 100}%` }}
       ></div>
     </>
   );
+};
+
+TimeDisplay.propTypes = {
+  item: PropTypes.shape({
+    initialTime: PropTypes.number,
+    step: PropTypes.number,
+    isActive: PropTypes.bool,
+  }),
+  formatTime: PropTypes.func,
+  getTimeInMin: PropTypes.func,
 };
 
 export default TimeDisplay;

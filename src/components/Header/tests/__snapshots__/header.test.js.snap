@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Should match shapshot 1`] = `"<div class=\\"header header--light\\"><button class=\\"switcher-btn\\">Dark theme</button></div>"`;

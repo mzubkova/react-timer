@@ -1,10 +1,23 @@
+.light {
+  background-color: #dfe3eb;
+  color: #525bc4;
+}
+
+.dark {
+  background-color: #282c34;
+  color: white;
+}
+
 .title {
-  font-family: "Helvetica Neue";
   font-size: 1.5rem;
   font-weight: 500;
   color: #170621;
   text-align: center;
   margin: 30px 0 0;
+
+  &--dark {
+    color: #fff;
+  }
 }
 
 .timer {
@@ -17,7 +30,7 @@
   position: fixed;
   width: 100%;
   &-inner {
-    margin: 20px auto;
+    margin: 0 auto;
     text-align: left;
     width: 600px;
   }
@@ -27,6 +40,15 @@
     height: 30px;
     border: 2px solid #ff3cac;
     border-radius: 5px;
+    background-color: #dfe3eb;
+
+    &--dark {
+      background-color: #282c34;
+      color: #fff;
+      &::placeholder {
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -35,13 +57,30 @@
   padding: 10px;
   width: 80px;
   height: 80px;
-  border: 1px solid rgba(203, 92, 213, 1);
   border-radius: 50%;
   outline: none;
   text-transform: uppercase;
   cursor: pointer;
-  background: #784ba0;
   color: #fff;
+
+  &:hover {
+    background-color: #322a92;
+  }
+
+  &:active {
+    background-color: #dd87e2;
+  }
+
+  &--light {
+    border: 3px solid #4dbddc;
+    background-color: #784ba0;
+  }
+
+  &--dark {
+    background-color: #4dbddc;
+    border: 3px solid #cf30c8;
+    color: #000;
+  }
 }
 
 .timer-progress {

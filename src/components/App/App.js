@@ -1,12 +1,19 @@
 import React, { useState } from "react";
+
 import Timer from "../Timer";
-import ThemedButton from "../Button/Button";
-// import { ThemeContext } from "../Context/ThemeContext";
+import Header from "../Header";
+
+import { ThemeContext } from "../Context/ThemeContext";
 
 const App = () => {
+  const [theme, setTheme] = useState("light");
+  const value = { theme, setTheme };
   return (
     <>
-      <Timer />;
+      <ThemeContext.Provider value={value}>
+        <Header />
+        <Timer />
+      </ThemeContext.Provider>
     </>
   );
 };
